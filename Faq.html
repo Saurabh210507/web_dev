@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq </title>
+    <!-- <link rel="stylesheet" href="index.css" type="text/css" title="FaQ"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<style>
+
+/* Header properties */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: hsl(180, 12%, 19%);
+  z-index: 9999;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav .logo img {
+  height: 100px;
+  /* Adjust the height as needed */
+  width: auto;
+  /* Maintain aspect ratio */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search-input {
+  height: 30px;
+  width: 200px;
+}
+
+
+
+.navbar {
+  position: fixed;
+  display: block;
+}
+
+nav {
+  background-color: #3b4747;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: static;
+
+}
+
+.page-image {
+  position: relative;
+  z-index: 1;
+  /* Lower z-index to ensure the navigation bar appears on top of the page image */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 50px;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search-menu {
+  display: flex;
+}
+
+.search-input {
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.search-button {
+  padding: 3px 10px;
+}
+
+.menubar {
+  font-size: 30px;
+}
+
+/* FaQ properties */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: #efefef;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  background: #fff;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 10px
+          rgba(0, 0, 0, 0.5));
+  margin-top: 190px;
+}
+
+.accordion {
+  position: relative;
+  width: 350px;
+  margin-left: 40px;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content-accordion {
+  margin-top: 35px;
+  margin-right: 50px;
+}
+
+.question-answer {
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-img {
+  position: relative;
+  width: 320px;
+}
+
+.title-question {
+  margin: 1.4rem 0rem;
+  color:blue;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.up-icon {
+  display: none;
+}
+
+.answer {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  display: none;
+  font-style: italic;
+}
+
+.show-text .answer {
+  display: block;
+}
+
+.show-text .up-icon {
+  display: inline;
+}
+
+.show-text .down-icon {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .accordion {
+    width: 920px;
+    height: 0;
+    display: flex;
+  }
+
+  .accordion-img {
+    position: relative;
+    width: 420px;
+    top: 88px;
+  }
+
+  .question-answer {
+    width: 380px;
+  }
+
+  .content-accordion {
+    margin-top: 85px;
+  }
+
+  .title {
+    margin-top: 50px;
+    font-size: 3rem;
+  }
+}
+
+</style>
+<body>
+<!-- Header -->
+<header>
+    <nav class="Navigation">
+      <a href="#" class="logo"><img src="techgurukul-logo.png" alt="Logo"></a>
+      <ul>
+        <li ><a href="index.html">Home</a></li>
+        <li><a href="about.html">AboutUs</a></li>
+        <li><a href="index.html#course_link">OnlineCourses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="my_account_login.html">My Account</a></li>
+        <li><a href="Faq.html">FaQ</a></li>
+        <li>
+        <input type="text" class="search-input" placeholder="Search">
+        <button class="search-button">Search</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="container">
+        <h1 class="title">
+            Frequenty Asked Questions
+        </h1>
+        <main class="accordion">
+            <div class="faq-img">
+                <img src="faq.avif" alt="" class="accordion-img">
+            </div>
+            <div class="content-accordion">
+                <div class="question-answer">
+                    <div class="question">
+                        <h1 class="title-question">
+                            Advantages of online tution with TechGurukul?
+                        </h1>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Online tuition classes are preferably easier than the traditional method of coaching. It has become the first chosen option for both students and tutor due to various reasons. Let us look at the benefits of taking online classes below • Flexible and convenient to attend classes as you only need an internet connection and a laptop/tablet/phone. • No need for travelling • Networking opportunities with students from other cities/school. • Save documents – In online classes, you get the option to save and replay the sessions. So, you can go back and replay if you have missed any important point. • You get the chance to connect with experts from other cities which is not possible in a local institution.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            Which is the best online tution centre in india?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            There are plenty of institutes and tuition centers to choose from, especially when it comes to online tuition classes as we’re living in the Internet era. You can scan through the reviews and ratings of different tuition centers and tutors available with Techgurukul to find the best one for yourself.
+                        </p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            What is the Average online tution fee charged by tutors in india?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            The tuition fee for online tutors varies as several factors are considered while setting the tuition fee such as tutors’ experience & qualification, the number of live sessions, subjects to be covered etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                           How is TechGurukul Different from school/Tution?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Techgurukul Online is a special curriculum designed by Subjects experts and experience teacher, The advanced curriculum entails a customized learning plan for each Class student, supervised by a program manager to track improvement areas for an uninterrupted learning experience. A live interactive session with a teacher helps student’s clear doubts instantly. With Techgurukul’s advanced curriculum, Our methodology is aimed at nurturing creative thinkers and problem solvers of tomorrow by helping them develop mathematical thinking.
+                        </p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            How would TechGurukul provide instant Doubt clearing session Online?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Every session that our subjects experts take is tailor-made to serve the needs of our students. Each Class student is assigned an academic mentor to keep track of their progress and understand their improvement areas to give them an uninterrupted experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
