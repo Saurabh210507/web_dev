@@ -41,7 +41,7 @@ nav ul li a {
 }
 
 .search-input {
-  height: 30px;
+  height: 20px;
   width: 200px;
 }
 
@@ -419,7 +419,7 @@ td {
 .table_data {
   height: 350px;
   width: 350px;
-  margin: 40px;
+  margin: 12px;
   padding: 50px;
   display: inline-block;
   background-color: hsl(22, 55%, 78%);
